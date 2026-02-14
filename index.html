@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Valentine Surprise ❤️</title>
+
+<style>
+body{
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#ff8fa3,#ff4d6d);
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:0;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  width:340px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2{
+  color:#ff4d6d;
+}
+
+img{
+  width:140px;
+  margin-bottom:10px;
+}
+
+button{
+  background:#ff4d6d;
+  color:white;
+  border:none;
+  padding:12px 25px;
+  border-radius:25px;
+  font-size:16px;
+  cursor:pointer;
+  margin-top:15px;
+}
+
+button:hover{
+  background:#e63956;
+}
+
+.page{ display:none; }
+.active{ display:block; }
+
+ul{
+  text-align:left;
+  padding:0;
+  list-style:none;
+}
+
+li{
+  background:#ffe5ec;
+  margin:8px 0;
+  padding:10px;
+  border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<!-- PAGE 1 -->
+<div class="page active" id="p1">
+<img src="https://media.tenor.com/5qZ7J9Jr5jEAAAAi/bubu-dudu.gif">
+<h2>Will you be my GF and future wife Niharika? 💌</h2>
+<p>aaachese sochnaa🥺 </p>
+<button onclick="next(2)">Yes 💖</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="p2">
+<img src="https://media.tenor.com/QJjJ3l8hT9EAAAAi/bubu-dudu-love.gif">
+<h2>Reasons Why I Love You ❤️</h2>
+
+<ul>
+<li>👀  Aapki aaahkee</li>
+<li>🌸 Aapki kindness aur care</li>
+<li>🤝 Mujhe aachese jante ho</li>
+<li>🏡 mere safe place ho</li>
+<li>✨ Aapka pyaaar </li>
+</ul>
+
+<button onclick="next(3)">One Hug? 🤗</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="p3">
+<img src="https://media.tenor.com/3S5oV4kOZ6sAAAAi/bubu-dudu-hug.gif">
+<h2>I knew you'd say YES 😍</h2>
+<p>You don’t even realize how special you are to me.</p>
+<p>My world feels warmer, brighter and happier because of you ❤️</p>
+<button onclick="next(4)">Next 💞</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="p4">
+<img src="https://media.tenor.com/dH6J6XnK1WAAAAAi/bubu-dudu-kiss.gif">
+<h2>My Valentine Promise 💖</h2>
+<p>
+Mein promise karta hun ki mein humesha aapka saath dungaa aapke worst mei aur aache moments mei, 
+Aur mein kabhi bhi gussa nahi karunga aapke upar, 
+Aur humesha mein aaapko respect karunga aur value bhi🥺🫶🏻, Aur mein kabhi aapko control nahi karunga aur apne limits mei rahunga 😚
+</p>
+<button onclick="next(5)">Final Surprise 🎁</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="p5">
+<img src="https://media.tenor.com/WKQzG0H9C4YAAAAi/bubu-dudu-heart.gif">
+<h2>Happy Valentine's Day 🌹</h2>
+<p>Today, Aaj , Kal , Purso , Summer , Rainy , Winter , 
+Aur humesha … Aami Tomake Onek Onek Bhalobhashi Niharika♥️🧿🫶🏻</p>
+</div>
+
+</div>
+
+<script>
+function next(page){
+  document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+  document.getElementById("p"+page).classList.add("active");
+}
+</script>
+
+</body>
+</html>
